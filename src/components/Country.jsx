@@ -23,9 +23,9 @@ export default function Country() {
       </button>
       {country && (
         <div className="country-details">
-          <img src={country.flags.png} alt={country.name.common} />
-          <h1>{country.name.common}</h1>
+          <img src={country.flags.svg} alt={country.name.common} />
           <div className="country-details-area">
+          <h1>{country.name.common}</h1>
             <div className="country-details-mainData">
               <p>
                 <strong>Native Name:</strong> {country.name.nativeName?.[Object.keys(country.name.nativeName)[0]]?.official || "N/A"}

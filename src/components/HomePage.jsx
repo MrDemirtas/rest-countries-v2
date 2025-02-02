@@ -40,7 +40,7 @@ export default function HomePage() {
 function Country({ country }) {
   return (
     <div className="country" onClick={() => (location.hash = `/country/${country.cca3}`)}>
-      <img src={country.flags.png} alt={country.name.common} />
+      <img src={country.flags.svg} alt={country.name.common} />
       <div className="country-info">
         <h2>{country.name.common}</h2>
         <div className="country-data">
